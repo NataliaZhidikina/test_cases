@@ -1,0 +1,285 @@
+div{ 
+/* width: 10px; 
+height: 10px; 
+background-color: brown; 
+border: 0px; 
+border-color: white;*/ 
+    position: relative; 
+    border-radius: 50%; 
+} 
+.head, .body{ 
+
+
+} 
+.head-shadow1{
+    margin:auto 33.5% auto 33.5%; 
+    width: 33%;
+    padding-bottom: 2%;
+    left: 3%;
+    background-image:linear-gradient(to top, #784421 50%, white 50%, white 75%); 
+    z-index: 4;
+
+}
+.head-shadow2{
+/*padding-bottom: 90%; 
+    width: 100%;  */
+    padding-bottom: 5%;
+    padding-right: 5%;
+    background-color: #784421;
+}
+.head{ 
+    
+   padding-bottom: 90%;
+    background-color: #a05a2c;
+    background: #a05a2c;     
+} 
+.head-black-border{
+   
+    /*margin: auto 35% auto 35%; 
+    width: 30%; */
+    left:-6%;
+    margin-top: 25%;
+    padding: 2%; 
+    background-color: black; 
+    z-index: 3; 
+} 
+.body-black-border{ 
+    margin: -25% 30% auto 30%; 
+    width: 40%; 
+    padding: 0.5%; 
+    background-color: black; 
+} 
+.body{ 
+    padding-bottom: 90%; 
+    width: 100%; 
+    background-image: radial-gradient(circle at 40% 20%, #a05a2c 70%, #784421 70%,#784421 100% ); 
+}
+
+.left-ear-black-border{
+    
+    transform: rotate(-75deg);
+    top: 20%;
+    left:-30%;
+    position: absolute;
+    height: 30%; 
+    width: 70%; 
+    background-color:black;  
+    padding: 1.5%;
+    border-bottom-left-radius:18em 15em ;
+    border-bottom-right-radius:5em 5em ;
+    border-top-left-radius:9em 9em ;
+    border-top-right-radius:60em 30em ;
+}
+.left-ear{
+    width: 98.5%;
+    height: 98.5%;
+    background-color: #784421;
+    
+    border-bottom-left-radius:18em 15em ;
+    border-bottom-right-radius:5em 5em ;
+    border-top-left-radius:9em 9em ;
+    border-top-right-radius:65em 30em ;
+}
+
+.right-ear-black-border{
+    transform: rotate(75deg);
+    top: 20%;
+    right:-30%;
+    position: absolute;
+    height: 30%; 
+    width: 70%; 
+    background-color:black;  
+    padding: 1.5%;
+  
+    border-bottom-left-radius:5em 5em ;
+    border-bottom-right-radius:15em 18em ;
+    border-top-left-radius:60em 30em ;
+    border-top-right-radius:9em 9em ; 
+   
+}
+.right-ear{
+    width: 98.5%;
+    height: 99.5%;
+    background-image:radial-gradient(circle at 50% 300% ,#784421 80% ,#5f3519 80%, #5f3519 100% );
+    
+    border-bottom-left-radius:5em 5em ;
+    border-bottom-right-radius:15em 18em ;
+    border-top-left-radius:60em 30em ;
+    border-top-right-radius:9em 9em ;  
+}
+
+.right-eye-black-border{
+   position: absolute;
+   top:30%;
+   right: 23%;
+   width: 20%;
+   padding: 2%; 
+   
+   background-color: black;
+    z-index: 2;
+}
+
+.left-eye-black-border{
+   position: absolute;
+   top:30%;
+   left: 23%;
+   width: 20%;
+   background-color: black;
+   padding: 2%; 
+}
+
+.eye{
+    content: "";
+    background-color: white;
+    width: 100%;
+    padding: 30% 0% 30% 0%;
+}
+
+.left-eye{
+    content: "";
+    left:50%;
+    width: 35%;
+    padding-bottom: 35%;
+   background-color: black;
+}
+.right-eye{
+    content: "";
+    right: -15%;
+    width: 35%;
+    padding-bottom: 35%;
+   background-color: black;
+}
+.nose{
+    position: absolute;
+    content: "";
+    width: 20%;
+    top: 70%;
+    left: 40%;
+    padding: 7% 0% 7% 0%;
+    background-color: black;
+    
+    border-bottom-left-radius:25em 25em ;
+    border-top-left-radius:15em 10em ;
+    border-bottom-right-radius:25em 25em ;
+    border-top-right-radius:15em 10em ;    
+}
+.legs{
+   margin:-6% 35% auto 35%; 
+    top:40%;
+}
+.leg{
+    display: inline-block;
+    width: 47%;
+}
+.border-left-leg{
+    background-color: BLACK;/*#784421; */
+    border-bottom-left-radius: 20em 20em;
+    border-bottom-right-radius:20em 20em ;
+    border-top-left-radius: 50em 50em; 
+    border-top-right-radius:50em 50em ;
+    padding: 4%;
+}
+.border-right-leg{
+    background-color: BLACK;/*#784421; */
+    border-bottom-left-radius: 20em 20em;
+    border-bottom-right-radius:20em 20em ;
+    border-top-left-radius: 50em 50em; 
+    border-top-right-radius:50em 50em ; 
+    padding: 4%;
+}
+.right-leg{
+    padding-bottom: 60%;
+    background-image: radial-gradient(circle at 20% 40%, #a05a2c 70%, #784421 70%, #784421 100%); 
+    border-bottom-left-radius: 20em 20em;
+    border-bottom-right-radius:20em 20em ;
+    border-top-left-radius: 50em 50em; 
+    border-top-right-radius:50em 50em ;
+    
+}
+.left-leg{
+     padding-bottom: 60%;
+    background-image: radial-gradient(circle at 40% 40%, #a05a2c 70%, #784421 70%, #784421 100%);  
+    border-bottom-left-radius: 20em 20em;
+    border-bottom-right-radius:20em 20em ;
+    border-top-left-radius: 50em 50em; 
+    border-top-right-radius:50em 50em ; 
+   
+}
+.first-right-finger{
+    width: 33%;
+    margin-top: 25%;
+    margin-left: 5%;
+    display: inline-block;
+    position: absolute;
+    padding-bottom: 35%;
+    background-image: radial-gradient(circle at -140% 60%, #a05a2c 74%, #000 74%, #000 80%,  #a05a2c 80%, #a05a2c 100%);
+   border-radius: 40% 30% 40% 20%;
+}
+.second-right-finger{
+    width: 25%;
+    margin-top: 20%;
+    margin-left: 35%;
+    display: inline-block;
+    position: absolute;
+    padding-bottom: 40%;
+    background-image: radial-gradient(circle at -155% 70%, #a05a2c 73%, #000 73%, #000 80%,  #a05a2c 80%, #a05a2c 100%);
+   border-radius: 40% 30% 40% 20%;
+}
+.third-right-finger{
+     width: 13%;
+    margin-top: 26%;
+    margin-left: 63%;
+    display: inline-block;
+    position: absolute;
+    padding-bottom: 34%;
+    background-image: radial-gradient(circle at -170% 60%, #a05a2c 70%, #000 70%, #000 80%,#a05a2c 60%);
+   border-radius: 40% 30% 40% 20%;
+}
+.first-left-finger{
+    width: 33%;
+    margin-top: 25%;
+    margin-left: 5%;
+    display: inline-block;
+    position: absolute;
+    padding-bottom: 35%;
+    background-image: radial-gradient(circle at 140% 60%, #a05a2c 70%, #000 70%, #000 80%,  #a05a2c 80%, #a05a2c 100%);
+   border-radius: 40% 30% 40% 20%;
+}
+.second-left-finger{
+    width: 25%;
+    margin-top: 20%;
+    margin-left: 33%;
+    display: inline-block;
+    position: absolute;
+    padding-bottom: 40%;
+    background-image: radial-gradient(circle at 195% 70%, #a05a2c 70%, #000 70%, #000 80%,  #a05a2c 80%, #a05a2c 100%);
+   border-radius: 40% 30% 40% 20%;
+}
+.third-left-finger{
+   width: 17%;
+    margin-top: 30%;
+    margin-left: 60%;
+    display: inline-block;
+    position: absolute;
+    padding-bottom: 30%;
+    background-image: radial-gradient(circle at 190% 60%, #a05a2c 70%, #000 65%, #000 80%,  #a05a2c 80%, #a05a2c 100%);
+   border-radius: 40% 30% 40% 20%;
+}
+.border-tail{
+    position: absolute;
+    margin:auto 50% auto 48%; 
+    top:0%;
+    width: 4%;
+    padding: 0.5%;
+    background-color:black;
+    border-radius:  70% 80% 0 0;
+    transform:skewX(-20deg);
+}
+.tail{
+    position: relative;
+    width: 98.5%;
+    height: 98.5%;
+    background-image: radial-gradient(circle at -140% 60%,#a05a2c 80%, #784421 50%,#784421 100%);
+    padding-bottom: 200%;
+    border-radius:  70% 80% 0 0;
+}
