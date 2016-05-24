@@ -1,0 +1,29 @@
+/*header h1{
+    font-size: 1em;
+}
+header,footer, body{
+    background-color: #FFF;
+}
+header a{
+    text-decoration: underline;
+    color: #591B8D;
+    border: 0px solid #FFF;
+    padding: 0;
+    margin: 0;
+}
+h1:after{
+    content: "";
+}
+#left, #center{
+    float: none;
+    clear: both;
+    width: 100%;
+}
+img{
+    display: none;
+}
+.myClass {
+   -webkit-column-count:1;
+	-moz-column-count: 1;
+	column-count:1;
+}*/

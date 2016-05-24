@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+    function sum(arr) {
+      return arr.reduce(function(a, b) {
+        return a + b;
+      });
+    }
+
+   // alert( sum([1, 2, 3]) ); // 6 (=1+2+3)
+    function sumArgs() {
+        var arr = [].slice.call(arguments);
+        if(arr.length>0){
+      return arr.reduce(function(a, b) {
+        return a + b;
+      });}
+    }
+
+    //alert( sumArgs(1, 2, 3) ); // 6, аргументы переданы через запятую, без массива
+       function applyAll(){
+     var arr = [].slice.call(arguments,1);
+    // alert(arr[arr.length-1]);
+     arguments[0](arr);
+   }
+       var min = applyAll(Math.min, 1, 2, 3);
+       //assert.equal(min, 1);
+       var min = applyAll(Math.min, 1, 2, 3);
+       //assert.equal(min, 1);
+       //var date = '2011-10-02';
+       //var date = 1234567890;
+       var date = [2054, 0, 1];
+        //var trueDate = new Date(Date.parse(date));
+      // var trueDate = new Date(date);
+       var trueDate =new Date(date[0],date[1],date[2]);
+       
+       //alert(trueDate);
+       if(trueDate.getDate()<10){
+         var result = '0'+trueDate.getDate()+'.';  
+       }else{
+           var result = trueDate.getDate()+'.';
+       }
+       if((Number(trueDate.getMonth())+1)<10){
+           result+='0'+(Number(trueDate.getMonth())+1);
+       }else{
+           result+=(Number(trueDate.getMonth())+1); 
+       }
+       result+='.'+String(trueDate.getFullYear()).substring(2,4);
+       // alert(result);
+       
+       function getClass(obj){
+      return {}.toString.call(obj).slice(8,-1);
+    }
+  
+       
+       function formatDate(date) {
+     var type = typeof date;
+     var trueDate = new Date();
+     var result;
+     switch(type){
+       case "number":
+        trueDate = new Date();
+             trueDate.setTime(date*1000);
+        break;
+       case "string":
+        trueDate = new Date(Date.parse(date));
+        break;
+       case "object":
+         var resultType = getClass(date);
+         if(resultType=="Date"){
+        trueDate = date;
+     }else if(resultType=='Array'){
+       trueDate =new Date(date[0],date[1],date[2]);
+     }
+     
+   }
+       if(trueDate.getDate()<10){
+         var result = '0'+trueDate.getDate()+'.';  
+       }else{
+           var result = trueDate.getDate()+'.';
+       }
+       if((Number(trueDate.getMonth())+1)<10){
+           result+='0'+(Number(trueDate.getMonth())+1);
+       }else{
+           result+=(Number(trueDate.getMonth())+1); 
+       }
+       result+='.'+String(trueDate.getFullYear()).substring(2,4);
+           return result;
+   }
+       alert( formatDate('2011-10-02') ); // 02.10.11
+       alert( formatDate(1234567890) ); // 14.02.09
+       alert( formatDate([2014, 0, 1]) ); // 01.01.14
+       alert( formatDate(new Date(2014, 0, 1)) ); // 01.01.14
+</script> 
+</body>
+</html>

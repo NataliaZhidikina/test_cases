@@ -1,0 +1,250 @@
+
+body{
+	margin: 1%;
+	padding:1%;
+	background-color: rgba(0,0,255,.2);
+	font-size: 100%;
+	min-width: 500px;
+
+}
+header, footer{
+  background-color:#0066FF;
+  padding: 1%;
+  margin: 1%;
+}
+header h1{
+	font-size: 3rem;
+	color:rgba(0,0,0,.7);;
+
+}
+
+section{
+  margin:1%;
+    padding:1%;
+}
+
+nav a{
+	display:block;
+	background-color: white;
+	border: 1px solid black;
+	text-align: center;
+	border-radius: 35px;
+	text-decoration: none;
+	padding: 2%;
+	margin: 1%;
+}
+
+h1{
+	text-align: center;
+	color:rgba(255,0,0,.7);;
+}
+
+
+.myClass{
+	margin: 0em 1em;
+	padding:.75em;
+	border: 1px solid black;
+	border-radius: .25%;
+
+	/* Safari and Chrome */	
+	-webkit-column-count:3;
+	-moz-column-count: 3;
+	column-count:3;
+	
+}
+
+
+
+ol{
+	list-style:upper-roman; 
+	margin:1em;
+}
+img{
+	display: none;
+}
+
+footer{
+	clear: both;
+	text-align:center;
+	text-transform: uppercase;
+}
+
+/*My style*/
+@media only screen and (min-width : 900px) {
+header, footer{
+    background-color: rgba(0,0,255,.0);
+}
+nav a{
+    color: rgba(10,10,255,1);
+}
+#left{
+    width: 20%;
+    float: left;
+}
+#center{
+    width: 90%;
+}
+img{
+    display: inline-block;
+    width: 15%;
+    margin: 1.75%;
+}
+
+footer,header{
+    margin: 0;
+    padding: 0;
+}
+h1:after{
+    content: "(I guess...)";
+}
+}
+@media print{
+    header h1{
+    font-size: 1em;
+}
+header,footer, body{
+    background-color: #FFF;
+}
+header a{
+    text-decoration: underline;
+    color: #591B8D;
+    border: 0px solid #FFF;
+    padding: 0;
+    margin: 0;
+}
+h1:after{
+    content: "";
+}
+#left, #center{
+    float: none;
+    clear: both;
+    width: 100%;
+}
+img{
+    display: none;
+}
+.myClass {
+   -webkit-column-count:1;
+	-moz-column-count: 1;
+	column-count:1;
+}
+}
+
+
+
+body{
+		margin: 1%;
+		padding:1%;
+		background-color: rgba(0,0,255,.2);
+		font-size: 100%;
+		min-width: 500px;
+	}
+header, footer{
+		background-color:#0066FF;
+		padding: 1%;
+		margin: 1%;
+	}
+header h1{
+		font-size: 3rem;
+		color:rgba(0,0,0,.7);
+	}
+section{
+	  	margin:1%;
+	    padding:1%;
+	}
+nav a{
+		display:block;
+		background-color: white;
+		border: 1px solid black;
+		text-align: center;
+		border-radius: 35px;
+		text-decoration: none;
+		padding: 2%;
+		margin: 1%;
+	}
+h1 {
+		text-align: center;
+		color:rgba(255,0,0,.7);
+	}
+
+
+.myClass{
+		margin: 0em 1em;
+		padding:.75em;
+		border: 1px solid black;
+		border-radius: .25%;
+
+		/* Safari and Chrome */
+		-webkit-column-count:3;
+		-moz-column-count: 3;
+		column-count:3;
+	}
+
+ol{
+		list-style:upper-roman;
+		margin:1em;
+}
+img{
+		display: none;
+}
+
+footer{
+		clear: both;
+		text-align:center;
+		text-transform: uppercase;
+}
+
+@media screen and (min-width: 900px){
+	header, footer {
+			background-color: transparent;
+			color: #000;
+		}
+	h1:after{
+		content: "I guess...";
+	}
+	header a{
+		color: #000;
+	}
+	#left{
+		float: left;
+		width: 30%;
+	}
+	#center{
+		float: left;
+		width: 60%;
+	}
+	img{
+		display: inline-block;
+		width: 20%;
+		margin-left: 3%;
+	}
+	footer p{
+		overflow: visible;
+		margin-left: 15%;
+		margin-top: -25%;
+		
+	}
+
+}
+
+	header{
+		text-align: center;
+	}
+	header h1{
+		font-size: 1em;
+	}
+	header nav a{
+		display:block;
+		/* float: left; */
+		text-decoration: underline;
+		border: 0;
+		line-height: 1%;
+
+	}
+	image{
+		display: none;
+	}
+	body{
+		background-color: #fff;
+	}
+

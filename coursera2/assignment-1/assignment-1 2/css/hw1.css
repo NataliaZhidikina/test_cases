@@ -1,0 +1,108 @@
+body{
+  padding: 1%;
+    margin: 1%;
+}
+header{
+    background: url(../images/flywheel.jpg) no-repeat;
+    font-family: 'Open Sans';
+    font-size: 16px;
+    background-size: cover
+}
+h1{
+    color: #FFFFFF;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+}
+h2{
+    color: #000000;
+    text-transform: uppercase;
+    margin-top: 15px;
+     padding-left: 1%;
+}
+section{
+  
+    font-family: 'Open Sans';
+    font-size: 16px;
+}
+section a{
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+}
+
+li{
+    list-style-type: none;
+}
+nav a{
+    background-color: rgba(255,255,255,0.25);
+    color: #000000;
+    font-size: 1.2em;
+    font-weight: 600;
+    display: inline-block;
+    width: 150px;
+    height: 25px;
+    text-decoration: none;
+    padding:25px 40px;
+    margin: 4% 2% 3% 7%;
+    border-radius: 0.5em/0.2em;
+    text-align: center;
+}
+nav a:hover, a:active, a:focus{
+     background-color: rgba(255,255,255,1);
+}
+aside{
+    width: 300px;
+    display: block;
+    height: 100%;
+    background-color: #777613;
+    float: left;
+}
+img{
+    text-align: center;
+    width: 225px;
+    height: 150px;
+ margin: 10% 11% 0%;
+    border: 3.5px solid #000;
+     color: #000000;
+    background-color: none;
+    text-align: center;
+}
+section p, section ul{
+   text-align: left;
+    padding-right: 5%;
+    padding-left: 20%;
+    font-size: 1.2em;
+}
+
+td{
+    background-color: #E4F5D4;
+    color: #868686;
+    text-align: center;
+    padding: 2% 2%;
+     text-shadow:  1px 1px 5px rgba(117, 117, 117, 0.4);
+}
+td:first-child,th:first-child{
+    text-align: left;
+    width: 62.5%;
+}
+th{
+     border-top-right-radius: 0.3em;
+    border-top-left-radius:0.3em;
+     padding: 1.5% 2%;
+  background-color: #92AA5A;
+    color: #FFFFFF;
+    border-bottom: 3px solid #B1E053;
+    box-shadow: inset 0 -5px 20px 4px rgba(150,0,0,0.1);
+}
+table{
+    padding:0% 5%;
+    font-weight: 600;
+}
+td:hover{
+    background-color: #F1FFE9;
+}
+th:hover{
+    background-color: #929B4A;
+}

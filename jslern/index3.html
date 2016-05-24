@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    function Animal(name) {
+          this.name = name;
+        }
+
+        Animal.prototype.walk = function() {
+          alert( "ходит " + this.name );
+        };
+
+        function Rabbit(name) {
+          this.name = name;
+        }
+        Rabbit.prototype = new Animal();
+
+        Rabbit.prototype.walk = function() {
+          alert( "прыгает! и ходит: " + this.name );
+        };
+        var rabbit = new Rabbit("Banny");
+        var rabbit2 = new Rabbit("junny");
+        rabbit.walk();
+        rabbit2.walk();
+        rabbit.name = "robby";
+        rabbit.walk();
+        rabbit2.walk();
+        var animal = new Animal("julli");
+        animal.walk();
+         rabbit.walk();
+        rabbit2.walk();
+    </script>
+</body>
+</html>
