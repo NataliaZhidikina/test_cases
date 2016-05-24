@@ -1,0 +1,15 @@
+.circle{
+    display: inline-block;
+    width: 10%;
+    padding-top:4.75%;
+    padding-bottom: 4.75%;
+    list-style-type: none;
+    margin:3px;
+    border-radius: 50%;
+    border: 0;
+    border-color:white;
+    opacity:0.6;
+    color: white;
+    text-align: center;
+    font-size: 150%;
+}
