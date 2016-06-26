@@ -1,0 +1,58 @@
+div{
+    margin: 2% 0%;
+    height: 200px;
+}
+.gradient--pattern__diagonal{
+background: linear-gradient(135deg, #FABFB2, #FABFB2 20%, #FCA699 45%);
+background-size: 60px 60px;
+}
+
+.gradient--border{
+background-color: #224e95;
+}
+h4 {
+    text-align: center;
+padding: 30px 0;
+color: white;
+font-size: 40px;
+position: relative;
+margin: 0;
+transform: translate(-50%, -50%);
+top: 50%; 
+left: 50%;  
+background-image: linear-gradient(to right, rgba(211, 212, 218, 0), rgba(211, 212, 218, 0.3) 40%, rgba(211, 212, 218, 0.3) 60%, rgba(211, 212, 218, 0));
+}
+h4:before {
+width: 100%;
+height: 2px;
+position: absolute;
+left: 0;
+top: 0;
+content: "";
+background-image: linear-gradient(to right, rgba(211, 212, 218, 0), rgba(211, 212, 218, 0.8) 40%, rgba(211, 212, 218, 0.8) 60%, rgba(211, 212, 218, 0));
+}
+h4:after {
+width: 100%;
+height: 2px;
+position: absolute;
+left: 0;
+bottom: 0;
+content: "";
+background-image: linear-gradient(to right, rgba(211, 212, 218, 0), rgba(211, 212, 218, 0.8) 40%, rgba(211, 212, 218, 0.8) 60%, rgba(211, 212, 218, 0));
+}
+.grid1{
+    background-image: linear-gradient(0deg, #736dfd 0%,#736dfd 2%,#ffffff 2%, transparent 100%),
+                      linear-gradient(90deg, #736dfd 0%,#736dfd 4%,#ffffff 4%, #ffffff 100%) ;
+    background-size: 50px 50px;
+}
+.grid2{
+    background-image: linear-gradient(90deg, #736dfd 0%,#736dfd 3%,transparent 3%, #fff 100%),
+        linear-gradient(0deg, #736dfd 0%,#736dfd 4%,#ffffff 3%, #fff 100%) ;
+    background-size: 50px 50px;
+}
+.grid3{
+    background-image: 
+        linear-gradient(#98B7AF 1px, transparent 1px),
+linear-gradient(90deg, #98B7AF 1px, transparent 1px);
+    background-size: 2em 2em ;
+}

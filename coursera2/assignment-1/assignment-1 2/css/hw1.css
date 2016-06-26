@@ -3,6 +3,7 @@ body{
     margin: 1%;
 }
 header{
+   background-color: #92AA5A;
     background: url(../images/flywheel.jpg) no-repeat;
     font-family: 'Open Sans';
     font-size: 16px;
@@ -35,8 +36,10 @@ section a{
 li{
     list-style-type: none;
 }
+nav a:link{
+     background-color: rgba(255,255,255,0.25);
+}
 nav a{
-    background-color: rgba(255,255,255,0.25);
     color: #000000;
     font-size: 1.2em;
     font-weight: 600;
@@ -49,7 +52,7 @@ nav a{
     border-radius: 0.5em/0.2em;
     text-align: center;
 }
-nav a:hover, a:active, a:focus{
+nav a:hover, nav a:active, nav a:focus, nav a:visited{
      background-color: rgba(255,255,255,1);
 }
 aside{

@@ -1,0 +1,75 @@
+body{
+background-color: #F8F8F8;    
+}
+div[id="todo-container"]{
+    box-shadow:0 1px 4px rgba(0, 0, 0, 0.3);
+    background-color: #fff;
+    padding:   2%;
+    margin: 0 2%;
+   
+}
+li{
+    list-style-type: none;
+}
+[data-action='addTask']{
+    color:#0eb0b7;
+    background-color: rgba(0,0,0,0);
+    border: 1px solid rgba(0,0,0,0);
+    font-size: 18px;
+    position: absolute;
+    left: 3%;
+}
+[data-action='addTask']:first-of-type{
+    position: static;
+}
+[data-action='addTask']+label{
+     color:#2ecfd6;
+    text-decoration: underline;
+    font-size: 25px;
+}
+[data-action="removeTask"]{
+    width: 15px;
+    height: 15px;
+    background-color: rgba(0,0,0,0);
+    border: 1px solid rgba(0,0,0,0);
+    font-size: 6.5px;
+    font-weight: 800;
+    border-radius: 100%;
+   background-color: #d4d4d4;
+    color: #f7f7f7;
+    margin: 0% 1% 0% 5%;
+    padding: 0;
+    position: relative;
+    top:-3.5px;
+}
+[data-action="removeTask"]:hover{
+    background-color: #cd4400;
+}
+li{
+    width: 400px;
+   
+}
+ul ul ul ul ul ul button[data-action="addTask"]{
+    display: none;
+}
+label:hover+button[data-action="removeTask"],input[type="checkbox"]:hover~button[data-action="removeTask"]{
+    background-color: #cd4400;
+}
+ :checked+label{
+     color: #a2a2a2;
+    text-decoration: line-through;
+    text-decoration-color:black;
+     
+}
+input[type="checkbox"]{
+    border-radius: 100%;
+    border: 1px solid #0eb0b7;
+    background-color: rgba(255,255,255,1);
+}
+[type="text"], label{
+    font-size: 18px;
+    color: #000;
+    font-family:cursive;
+    max-width: 80%;
+    display: inline-block;
+}

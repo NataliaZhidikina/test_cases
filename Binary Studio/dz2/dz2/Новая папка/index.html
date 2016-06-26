@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="style.css">
+	<script src="jquery-2.2.4.js"></script>
+	
+	<title>Document</title>
+</head>
+<body>
+<h1><i class="fa fa-check"></i>CSS & jQuery To Do Checklist</h1>
+<form id="todo-list">
+  <span class="todo-wrap">
+    <input type="checkbox" id="1" checked/>
+    <label for="1" class="todo">
+      <i class="fa fa-check"></i>
+      Have a good idea
+    </label>
+    <span class="delete-item" title="remove">
+      <i class="fa fa-times-circle"></i>
+    </span>
+  </span>
+  <span class="todo-wrap">
+    <input type="checkbox" id="2"/>
+    <label for="2" class="todo">
+      <i class="fa fa-check"></i>
+      Plan idea execution
+    </label>
+    <span class="delete-item" title="remove">
+      <i class="fa fa-times-circle"></i>
+    </span>
+  </span>
+  <span class="todo-wrap">
+    <input type="checkbox" id="3"/>
+    <label for="3" class="todo">
+      <i class="fa fa-check"></i>
+      Execute idea
+    </label>
+    <span class="delete-item" title="remove">
+      <i class="fa fa-times-circle"></i>
+    </span>
+  </span>
+	<span class="todo-wrap">
+    <input type="checkbox" id="4"/>
+    <label for="4" class="todo">
+      <i class="fa fa-check"></i>
+      Celebrate with a cold one
+    </label>
+    <span class="delete-item" title="remove">
+      <i class="fa fa-times-circle"></i>
+    </span>
+  </span>
+  <div id="add-todo">
+    <i class="fa fa-plus"></i>
+    Add an Item
+  </div>
+</form>
+<script src="script.js"></script>
+</body>
+</html>
